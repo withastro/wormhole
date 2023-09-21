@@ -6,8 +6,8 @@ Wormhole is [Vercel Edge Function](https://vercel.com/docs/functions/edge-functi
 
 Just pass your query as the path, and you will be redirected to the most relevant page of the Astro Docs.
 
-- `https://example.com/vercel` => `https://docs.astro.build/[lang]/guides/deploy/vercel/`
-- `https://example.com/islands` => `https://docs.astro.build/[lang]/concepts/islands/`
+- `https://example.com/vercel` => `https://docs.astro.build/en/guides/deploy/vercel/`
+- `https://example.com/islands` => `https://docs.astro.build/en/concepts/islands/`
 
 ## Thanks
 
