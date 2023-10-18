@@ -15,9 +15,9 @@ export default async function handler(request: Request) {
     const query = new URL(request.url).searchParams.get('q');
     const lang = new URL(request.url).searchParams.get('lang') ?? 'en';
     if (!query) {
-        return redirect(new URL(`${domain}/${lang}`));
+        return redirect(new URL(`${domain}${lang}`));
     }
-    searchURL.searchParams.set('q', `! site:${domain}/${lang} ${query}`);
+    searchURL.searchParams.set('q', `! site:${domain}${lang} ${query}`);
     try {
         const html = await fetch(searchURL, { method: 'GET' }).then(res => res.text());
         // DuckDuckGo rewrites the request to a client-side redirect for tracking.

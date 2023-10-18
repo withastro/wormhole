@@ -3,10 +3,10 @@
     { "source": "/", "destination": "https://github.com/withastro/wormhole" }
   ],
   "rewrites": [
-    { "source": "/:path*", "destination": "/api/index?q=:path*" },
     {
-      "source": "/:path*/:language",
-      "destination": "/api/index?q=:path&lang=:language"
-    }
+      "source": "/:query/:language",
+      "destination": "/api/index?q=:query&lang=:language"
+    },
+    { "source": "/:path*", "destination": "/api/index?q=:path*" }
   ]
 }
