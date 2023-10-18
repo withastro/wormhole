@@ -13,10 +13,11 @@ export default async function handler(request: Request) {
     // to get the most relevant search result for our domain.
     const searchURL = new URL(engine);
     const query = new URL(request.url).searchParams.get('q');
+    const lang = new URL(request.url).searchParams.get('lang') ?? 'en';
     if (!query) {
-        return redirect(domain);
+        return redirect(new URL(`${domain}/${lang}`));
     }
-    searchURL.searchParams.set('q', `! site:${domain} ${query}`);
+    searchURL.searchParams.set('q', `! site:${domain}/${lang} ${query}`);
     try {
         const html = await fetch(searchURL, { method: 'GET' }).then(res => res.text());
         // DuckDuckGo rewrites the request to a client-side redirect for tracking.
