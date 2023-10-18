@@ -4,7 +4,7 @@
   ],
   "rewrites": [
     {
-      "source": "/:query/:language",
+      "source": "/:language/:query",
       "destination": "/api/index?q=:query&lang=:language"
     },
     { "source": "/:path*", "destination": "/api/index?q=:path*" }
