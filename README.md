@@ -22,6 +22,23 @@ Use this as a site shortcut in Chrome!
 
 Now, you can type `astro` in Chrome's address bar, followed by whatever topic you'd like to jump to in the Astro Docs.
 
+For Firefox:
+
+Firefox out of the box does not support adding a new search engine. However, there is an option to enable it. Here is how:
+
+- Open a new tab and navigate to `about:config`
+- In the search box, type `browser.urlbar.update2.engineAliasRefresh`.
+- At this point, the result list should be empty.
+  - If it is empty, click the **+** button at the top right.
+  - If the option already exists, set it to `true` by clicking the swap button on the right.
+- Now navigate to `about:preferences#search`.
+- Notice that it now has an **Add** button. Click on it.
+- In the popup, set the **engine URL** to `https://a.stro.cc/%s`.
+- Set the alias to `astro`, or anything you prefer!
+- press **Add Engine**.
+
+Now you can type `astro` followed by your search term. It will redirect you into the Astro Docs! 
+
 🫡 Good luck out there, astronaut!
 
 ## Thanks
