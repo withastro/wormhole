@@ -35,7 +35,7 @@ Firefox out of the box does not support adding a new search engine. However, the
 - Click on the **Add** button under the “Search Shortcuts” list.
 - In the popup, set the **engine URL** to `https://a.stro.cc/%s`.
 - Set the alias to `astro`, or anything you prefer!
-- press **Add Engine**.
+- Press **Add Engine**.
 
 Now you can type `astro` followed by your search term. It will redirect you into the Astro Docs! 
 
