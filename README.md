@@ -32,7 +32,7 @@ Firefox out of the box does not support adding a new search engine. However, the
   - If it is empty, click the **+** button at the top right.
   - If the option already exists, set it to `true` by clicking the swap button on the right.
 - Now navigate to `about:preferences#search`.
-- Notice that it now has an **Add** button. Click on it.
+- Click on the **Add** button under the “Search Shortcuts” list.
 - In the popup, set the **engine URL** to `https://a.stro.cc/%s`.
 - Set the alias to `astro`, or anything you prefer!
 - press **Add Engine**.
