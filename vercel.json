@@ -2,5 +2,11 @@
   "redirects": [
     { "source": "/", "destination": "https://github.com/withastro/wormhole" }
   ],
-  "rewrites": [{ "source": "/:path*", "destination": "/api/index?q=:path*" }]
+  "rewrites": [
+    {
+      "source": "/:language/:query",
+      "destination": "/api/index?q=:query&lang=:language"
+    },
+    { "source": "/:path*", "destination": "/api/index?q=:path*" }
+  ]
 }
