@@ -9,7 +9,7 @@ Just pass your query as the path, and you will be redirected to the most relevan
 - [`a.stro.cc/vercel`](https://a.stro.cc/vercel) => `https://docs.astro.build/en/guides/deploy/vercel/`
 - [`a.stro.cc/islands`](https://a.stro.cc/islands) => `https://docs.astro.build/en/concepts/islands/`
 - [`a.stro.cc/github%20pages`](https://a.stro.cc/github%20pages) => `https://docs.astro.build/en/guides/deploy/github/`
-- [`a.stro.cc/fr/vercel`](a.stro.cc/fr/vercel) => `https://docs.astro.build/fr/guides/deploy/vercel/`
+- [`a.stro.cc/fr/vercel`](https://a.stro.cc/fr/vercel) => `https://docs.astro.build/fr/guides/deploy/vercel/`
 
 ## Tip
 
